@@ -17,7 +17,8 @@ public class Main {
         System.out.println("Enter the value for minutes");
         minutes = keyboard.nextInt();
         hours = minutes >= 60? hours + minutes/60 : hours;
-
+        hours = hours%12;
+        minutes
 
 
         System.out.printf("The time is: %d:%02d",hours,minutes );
